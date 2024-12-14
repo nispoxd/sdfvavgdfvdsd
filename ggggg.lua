@@ -1,4 +1,4 @@
-do local GUI = game.CoreGui:FindFirstChild("Nishant Hub");if GUI then GUI:Destroy();end;if _G.Color == nil then
+do local GUI = game.CoreGui:FindFirstChild("SOMEXHUB");if GUI then GUI:Destroy();end;if _G.Color == nil then
        _G.Color = Color3.fromRGB(35,21,233)
    end 
 end
@@ -59,8 +59,8 @@ end
 
 function Notification(text)
 game.StarterGui:SetCore("SendNotification", {
-  Title = "Nishant Hub"; -- the title (ofc)
-  Text = Nishant Is God; -- what the text says (ofc)
+  Title = "Sea Hub"; -- the title (ofc)
+  Text = text; -- what the text says (ofc)
   Icon = "rbxassetid://14495684069"; -- the image if u want.
   Duration = 3; -- how long the notification should in secounds
 })
@@ -75,14 +75,14 @@ function Update:Window(text,logo,keybind)
 	local keybind = keybind or Enum.KeyCode.RightControl
 	local yoo = string.gsub(tostring(keybind),"Enum.KeyCode.","")
 	
-	local Nishant Hub = Instance.new("ScreenGui")
-	Nishant Hub.Name = "Nishant Hub"
-	Nishant Hub.Parent = game.CoreGui
-	Nishant Hub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	local SOMEXHUB = Instance.new("ScreenGui")
+	SOMEXHUB.Name = "SOMEXHUB"
+	SOMEXHUB.Parent = game.CoreGui
+	SOMEXHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	local Main = Instance.new("Frame")
-	Main.Name = "Nishant Hub"
-	Main.Parent = Nishant Hub
+	Main.Name = "Main"
+	Main.Parent = SOMEXHUB
 	Main.Active = true
 	Main.ClipsDescendants = true
 	Main.AnchorPoint = Vector2.new(0.5,0.5)
@@ -92,7 +92,7 @@ function Update:Window(text,logo,keybind)
   Main.BackgroundTransparency = 1.000
 
 	local MCNR = Instance.new("UICorner")
-	MCNR.Name = "Nishant Hub"
+	MCNR.Name = "MCNR"
 	MCNR.Parent = Main
 
 	local Top = Instance.new("Frame")
@@ -111,26 +111,26 @@ Top.ZIndex = 2
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0, 10, 0, 30)
 	Logo.Size = UDim2.new(0, 60, 0, 60)
-	Logo.Image = "rbxassetid://111968872783257"
+	Logo.Image = "rbxassetid://14495684069"
 	Logo.Active = true
 	Logo.ZIndex = 8
 	
 	game:GetService("TweenService"):Create(Logo, TweenInfo.new(5, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, -1, true, 0), { Rotation = 360 }):Play()
 	
 	local Name = Instance.new("TextLabel")
-	Name.Name = "Nishant Hub"
+	Name.Name = "Name"
 	Name.Parent = Main
 	Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Name.BackgroundTransparency = 1.000
 	Name.Position = UDim2.new(0.107756112, 0, 0, 0)
 	Name.Size = UDim2.new(0, 50, 0, 27)
 	Name.Font = Enum.Font.GothamSemibold
-	Name.Text = "Nishant Hub"
+	Name.Text = "Sea Hub"
 	Name.TextColor3 = Color3.fromRGB(35, 21, 233)
 	Name.TextSize = 17.000
 
-	local Hub = Instance.new("Main")
-	Hub.Name = "Nishant Hub"
+	local Hub = Instance.new("TextLabel")
+	Hub.Name = "Hub"
 	Hub.Parent = Main
 	Hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Hub.BackgroundTransparency = 1.000
@@ -9513,7 +9513,7 @@ wait(1);
 
 Notify({
 Description = "There are no devil fruits left.";
-Title = "Nishant Hub";
+Title = "Sea Hub";
 Duration = 5;
 });
 						end
@@ -10538,8 +10538,8 @@ end)
     end)
     
     Misc:Button("Destroy Ui",function()
-        if game.CoreGui:FindFirstChild("Nishant Hub") then
-            game.CoreGui:FindFirstChild("Nishant Hub"):Destroy()
+        if game.CoreGui:FindFirstChild("Sea Hub") then
+            game.CoreGui:FindFirstChild("Sea Hub"):Destroy()
             game.CoreGui:FindFirstChild("PADOXHUBMODILE"):Destroy()
         end
     end)
